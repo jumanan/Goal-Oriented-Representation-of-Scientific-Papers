@@ -1,0 +1,6 @@
+T1	Task 118 153	entity-driven noun phrase rewriting
+T2	Task 721 756	entity-driven noun phrase rewriting
+*	Equiv T1 T2
+T3	Task 26 54	multi-document summarization
+T4	Task 158 186	multi-document summarization
+*	Equiv T3 T4

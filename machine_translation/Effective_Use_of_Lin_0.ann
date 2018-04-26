@@ -1,0 +1,14 @@
+T1	Task 480 499	non-terminal labels
+T2	Task 71 90	machine translation
+T3	Task 136 155	machine translation
+*	Equiv T2 T3
+T4	Task 199 201	MT
+T5	Task 435 437	MT
+*	Equiv T4 T5
+*	Synonym-of T2 T4
+T6	Task 683 691	Baseline
+T7	Task 514 533	length distribution
+R1	Contributes-to Arg1:T1 Arg2:T2
+A1	quality R1 +
+R2	Contributes-to Arg1:T7 Arg2:T2
+A2	quality R2 +

@@ -1,0 +1,21 @@
+T1	Task 262 327	automatic discovery of identity relationship between two entities
+T2	Task 343 360	instance matching
+*	Synonym-of T1 T2
+T3	Task 227 237	this paper
+T4	Task 238 240	we
+T5	Task 898 900	we
+*	Equiv T4 T5
+*	Synonym-of T3 T4
+T6	Task 790 848	learn a common similarity threshold for particular dataset
+T7	Task 458 500	cleaning existing datasets from duplicates
+T8	Task 502 581	validating of existing identity relationships between entities within a dataset
+T9	Task 682 781	analysis of sub-graphs formed by entities, their properties and existing relationships between them
+T10	Task 590 653	connecting different datasets using the owl:sameAs relationship
+R1	is-achieved-by Arg1:T1 Arg2:T3
+R2	is-achieved-by Arg1:T7 Arg2:T1
+R3	is-achieved-by Arg1:T8 Arg2:T1
+R4	is-achieved-by Arg1:T10 Arg2:T1
+R5	is-achieved-by Arg1:T3 Arg2:T9
+R6	is-achieved-by Arg1:T6 Arg2:T3
+R7	Contributes-to Arg1:T3 Arg2:T1
+A1	adaptability R7 +

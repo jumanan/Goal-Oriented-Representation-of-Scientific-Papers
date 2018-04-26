@@ -1,0 +1,26 @@
+T1	Task 522 595	mapping their entity graphs into the space spanned by entity random walks
+T2	Task 396 417	types of similarities
+T3	Task 0 15	ontology kernel
+T4	Task 361 376	ontology kernel
+T5	Task 689 704	ontology kernel
+T6	Task 944 959	ontology kernel
+*	Equiv T3 T4 T5 T6
+T7	Task 268 286	lexical similarity
+T8	Task 43 61	ontology alignment
+T9	Task 321 339	ontology alignment
+T10	Task 963 981	ontology alignment
+*	Equiv T8 T9 T10
+T11	Task 296 317	structural similarity
+T12	Task 476 497	structural similarity
+*	Equiv T11 T12
+R1	is-achieved-by Arg1:T2 Arg2:T7
+R2	is-achieved-by Arg1:T2 Arg2:T11
+R3	is-a-subtask-of Arg1:T2 Arg2:T8
+R4	is-a-subtask-of Arg1:T7 Arg2:T3
+R5	is-a-subtask-of Arg1:T11 Arg2:T3
+R6	is-achieved-by Arg1:T8 Arg2:T3
+R7	is-achieved-by Arg1:T11 Arg2:T1
+R8	Contributes-to Arg1:T3 Arg2:T8
+A1	generality R8 +
+R9	Contributes-to Arg1:T3 Arg2:T8
+A2	superiority R9 +

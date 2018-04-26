@@ -1,0 +1,15 @@
+T1	Task 286 296	this paper
+T2	Task 116 128	Semantic Web
+T3	Task 584 658	minimizing some cost on feasible flow problem defined on a bipartite graph
+T4	Task 193 250	correspondences between the semantically related entities
+T5	Task 56 73	Ontology matching
+T6	Task 334 351	Ontology matching
+*	Equiv T5 T6
+*	Synonym-of T4 T5
+T7	Task 299 310	graph based
+R1	is-a-subtask-of Arg1:T4 Arg2:T2
+R2	is-achieved-by Arg1:T4 Arg2:T7
+R3	is-achieved-by Arg1:T7 Arg2:T1
+R4	is-a-subtask-of Arg1:T3 Arg2:T1
+R5	Contributes-to Arg1:T1 Arg2:T4
+A1	combinatorial-aspects R5 address

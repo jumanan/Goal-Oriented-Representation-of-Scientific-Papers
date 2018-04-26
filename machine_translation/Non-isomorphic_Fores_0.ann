@@ -1,0 +1,4 @@
+T1	Task 482 506	parallel space searching
+T2	Task 149 180	statistical machine translation
+R1	Contributes-to Arg1:T1 Arg2:T2
+A1	quality R1 +

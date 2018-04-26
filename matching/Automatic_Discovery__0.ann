@@ -1,0 +1,44 @@
+T1	Task 832 898	approach that relies on attribute name co-occurrence in web tables
+T2	Task 1120 1154	an optimization problem on a graph
+T3	Task 416 509	refer to an attribute in their e+a query differently from how it is referred in the web table
+T4	Task 23 41	Attribute synonyms
+T5	Task 77 95	Attribute synonyms
+T6	Task 755 773	Attribute synonyms
+*	Equiv T4 T5 T6
+T7	Task 647 738	discover all the alternate ways of referring to the attributes of a given class of entities
+*	Synonym-of T4 T7
+T8	Task 958 1021	positive evidence of attribute synonymity from query click logs
+T9	Task 126 154	keyword-based search systems
+T10	Task 1028 1090	negative evidence from web table attribute name co-occurrences
+T11	Task 1061 1090	attribute name co-occurrences
+T12	Task 297 367	provide direct answers for them using a combination of knowledge bases
+T13	Task 927 930	our
+T14	Task 1413 1416	our
+T15	Task 1461 1464	our
+*	Equiv T13 T14 T15
+T16	Task 619 621	we
+T17	Task 1092 1094	we
+T18	Task 1297 1299	we
+*	Equiv T16 T17 T18
+*	Synonym-of T13 T16
+T19	Task 1308 1344	a linear programming based algorithm
+T20	Task 212 263	seek the value of an entity on a specific attribute
+T21	Task 280 291	e+a queries
+*	Synonym-of T20 T21
+R1	is-a-subtask-of Arg1:T4 Arg2:T20
+R2	is-achieved-by Arg1:T20 Arg2:T9
+R3	is-achieved-by Arg1:T12 Arg2:T9
+R4	is-achieved-by Arg1:T4 Arg2:T1
+R5	is-achieved-by Arg1:T4 Arg2:T13
+R6	is-a-subtask-of Arg1:T8 Arg2:T13
+R7	is-a-subtask-of Arg1:T10 Arg2:T13
+R8	is-a-subtask-of Arg1:T11 Arg2:T1
+R9	is-a-subtask-of Arg1:T11 Arg2:T10
+R10	is-a-subtask-of Arg1:T2 Arg2:T13
+R11	is-achieved-by Arg1:T13 Arg2:T19
+R12	Contributes-to Arg1:T1 Arg2:T4
+A1	precision R12 -
+R13	Contributes-to Arg1:T13 Arg2:T4
+A2	precision R13 +
+R14	Contributes-to Arg1:T13 Arg2:T4
+A3	recall R14 +

@@ -1,0 +1,46 @@
+T1	Task 21 47	hybrid machine translation
+T2	Task 92 118	hybrid machine translation
+*	Equiv T1 T2
+T3	Task 28 47	machine translation
+T4	Task 99 118	machine translation
+*	Equiv T3 T4
+T5	Task 120 122	MT
+T6	Task 251 253	MT
+T7	Task 257 259	MT
+T8	Task 669 671	MT
+*	Equiv T5 T6 T7 T8
+*	Synonym-of T3 T5
+T9	Task 765 769	MERT
+T10	Task 861 874	Hybrid System
+T11	Task 837 845	Baseline
+T12	Task 837 845	Baseline
+T13	Task 861 874	Hybrid System
+T14	Task 837 845	Baseline
+*	Synonym-of T13 T14
+T15	Task 837 845	Baseline
+T16	Task 837 845	Baseline
+T17	Task 255 259	RBMT
+T18	Task 240 253	rule-based MT
+*	Synonym-of T17 T18
+R1	is-achieved-by Arg1:T3 Arg2:T17
+R2	is-achieved-by Arg1:T3 Arg2:T1
+R3	is-achieved-by Arg1:T17 Arg2:T11
+R4	is-achieved-by Arg1:T17 Arg2:T15
+R5	is-achieved-by Arg1:T10 Arg2:T13
+R6	is-achieved-by Arg1:T1 Arg2:T10
+R7	is-a-subtask-of Arg1:T16 Arg2:T10
+R8	is-a-subtask-of Arg1:T11 Arg2:T10
+R9	is-a-subtask-of Arg1:T15 Arg2:T10
+R10	is-a-subtask-of Arg1:T12 Arg2:T10
+R11	Contributes-to Arg1:T13 Arg2:T3
+A1	BLEU R11 13.9
+R12	Contributes-to Arg1:T17 Arg2:T3
+A2	lexical-coverage R12 -
+R13	Contributes-to Arg1:T11 Arg2:T3
+A3	BLEU R13 14
+R14	Contributes-to Arg1:T15 Arg2:T3
+A4	BLEU R14 14.7
+R15	Contributes-to Arg1:T12 Arg2:T3
+A5	BLEU R15 14.6
+R16	Contributes-to Arg1:T16 Arg2:T3
+A6	BLEU R16 15.9

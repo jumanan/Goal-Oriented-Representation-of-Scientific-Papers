@@ -1,0 +1,22 @@
+T1	Task 706 716	this paper
+T2	Task 660 683	discriminative features
+T3	Task 275 307	matching of heterogeneous events
+T4	Task 953 978	bounds of matching scores
+T5	Task 275 283;253 269	matching relational data
+T6	Task 787 819	pattern based matching framework
+T7	Task 597 639	patterns exist in the occurrence of events
+*	Synonym-of T6 T7
+T8	Task 412 447	structure-based matching techniques
+T9	Task 983 990	pruning
+T10	Task 1300 1307	pruning
+*	Equiv T9 T10
+R1	is-achieved-by Arg1:T5 Arg2:T8
+R2	is-achieved-by Arg1:T2 Arg2:T6
+R3	is-achieved-by Arg1:T3 Arg2:T2
+R4	is-achieved-by Arg1:T6 Arg2:T1
+R5	is-achieved-by Arg1:T9 Arg2:T4
+R6	is-a-subtask-of Arg1:T9 Arg2:T1
+R7	Contributes-to Arg1:T8 Arg2:T3
+A1	performance R7 -
+R8	Contributes-to Arg1:T1 Arg2:T3
+A2	effectiveness R8 +

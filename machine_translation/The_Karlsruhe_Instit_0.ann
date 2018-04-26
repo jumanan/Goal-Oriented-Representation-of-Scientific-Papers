@@ -1,0 +1,5 @@
+T1	Task 164 193	WMT11 Shared Translation Task
+T2	Task 113 116	SMT
+T3	Task 100 124	phrase-based SMT systems
+R1	is-achieved-by Arg1:T2 Arg2:T3
+R2	is-achieved-by Arg1:T1 Arg2:T2

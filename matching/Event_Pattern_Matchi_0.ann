@@ -1,0 +1,12 @@
+T1	Task 0 22	Event pattern matching
+T2	Task 346 368	Event pattern matching
+*	Equiv T1 T2
+T3	Task 648 665	subgraph matching
+T4	Task 6 22	pattern matching
+T5	Task 352 368	pattern matching
+*	Equiv T4 T5
+T6	Task 395 411	graph structures
+T7	Task 572 595	online query processing
+R1	is-a-subtask-of Arg1:T6 Arg2:T1
+R2	is-achieved-by Arg1:T4 Arg2:T1
+R3	is-a-subtask-of Arg1:T7 Arg2:T1

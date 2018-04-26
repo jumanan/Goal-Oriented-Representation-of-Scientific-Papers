@@ -1,0 +1,18 @@
+T1	Task 35 53	similarity metrics
+T2	Task 279 297	similarity metrics
+T3	Task 483 501	similarity metrics
+*	Equiv T1 T2 T3
+T4	Task 147 197	semantic interoperability among heterogeneous data
+T5	Task 28 53	string similarity metrics
+T6	Task 272 297	string similarity metrics
+T7	Task 476 501	string similarity metrics
+*	Equiv T5 T6 T7
+T8	Task 58 76	Ontology alignment
+T9	Task 77 95	Ontology alignment
+T10	Task 228 246	Ontology alignment
+*	Equiv T8 T9 T10
+T11	Task 392 417	analyze naming variations
+R1	is-achieved-by Arg1:T4 Arg2:T8
+R2	is-achieved-by Arg1:T8 Arg2:T1
+R3	is-achieved-by Arg1:T11 Arg2:T5
+R4	is-achieved-by Arg1:T1 Arg2:T5

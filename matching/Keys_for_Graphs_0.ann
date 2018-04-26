@@ -1,0 +1,26 @@
+T1	Task 0 15	Keys for graphs
+T2	Task 16 31	Keys for graphs
+*	Equiv T1 T2
+T3	Task 39 100	uniquely identify entities represented by vertices in a graph
+*	Synonym-of T1 T3
+T4	Task 339 355	knowledge fusion
+T5	Task 233 282	Extending conventional keys for relations and XML
+T6	Task 316 337	object identification
+T7	Task 745 754	MapReduce
+T8	Task 113 231	a class of keys that are recursively defined in terms of graph patterns, and are interpreted with subgraph isomorphism
+T9	Task 692 720	parallel scalable algorithms
+T10	Task 761 794	vertex-centric asynchronous model
+T11	Task 360 389	social network reconciliation
+T12	Task 423 438	entity matching
+T13	Task 725 740	entity matching
+*	Equiv T12 T13
+R1	is-a-subtask-of Arg1:T1 Arg2:T5
+R2	is-achieved-by Arg1:T1 Arg2:T5
+R3	is-achieved-by Arg1:T5 Arg2:T8
+R4	is-a-subtask-of Arg1:T5 Arg2:T6
+R5	is-a-subtask-of Arg1:T5 Arg2:T4
+R6	is-a-subtask-of Arg1:T5 Arg2:T11
+R7	is-a-subtask-of Arg1:T5 Arg2:T12
+R8	is-achieved-by Arg1:T12 Arg2:T9
+R9	is-achieved-by Arg1:T9 Arg2:T7
+R10	is-achieved-by Arg1:T9 Arg2:T10

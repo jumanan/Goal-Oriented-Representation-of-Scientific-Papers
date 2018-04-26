@@ -1,0 +1,31 @@
+T1	Task 746 756	this paper
+T2	Task 170 270	identifying entity descriptions from different data sources that refer to the same real-world entity
+T3	Task 35 57	coreference resolution
+T4	Task 139 161	coreference resolution
+T5	Task 299 321	coreference resolution
+*	Equiv T3 T4 T5
+*	Synonym-of T2 T3
+T6	Task 366 381	active learning
+T7	Task 115 135	Web data integration
+T8	Task 876 913	extract and present a compact summary
+T9	Task 1112 1131;1145 1170	exploits the common features of two entities
+T10	Task 402 426	pay-as-you-go approaches
+T11	Task 1112 1124;1135 1170	exploits the different features of two entities
+T12	Task 383 396	crowdsourcing
+T13	Task 327 333	humans
+T14	Task 1223 1276	considers the diverse information on their identities
+T15	Task 453 492	verifying candidate coreferent entities
+R1	is-achieved-by Arg1:T15 Arg2:T13
+R2	is-a-subtask-of Arg1:T2 Arg2:T7
+R3	is-a-subtask-of Arg1:T15 Arg2:T2
+R4	is-achieved-by Arg1:T13 Arg2:T12
+R5	is-achieved-by Arg1:T13 Arg2:T6
+R6	is-achieved-by Arg1:T13 Arg2:T10
+R7	is-achieved-by Arg1:T1 Arg2:T8
+R8	is-a-subtask-of Arg1:T9 Arg2:T1
+R9	is-a-subtask-of Arg1:T11 Arg2:T1
+R10	is-a-subtask-of Arg1:T14 Arg2:T1
+R11	Contributes-to Arg1:T1 Arg2:T15
+A1	accuracy R11 not notably affected
+R12	Contributes-to Arg1:T1 Arg2:T15
+A2	efficient R12 +

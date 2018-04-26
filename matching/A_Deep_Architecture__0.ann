@@ -1,0 +1,55 @@
+T1	Task 224 243;279 316	deep models rely on multiple granularity representations
+T2	Task 886 910	a multi-layer perceptron
+T3	Task 1361 1380	sentence completion
+T4	Task 476 566	deep architecture to match two sentences with multiple positional sentence representations
+T5	Task 92 127	Matching natural language sentences
+T6	Task 722 729	Bi-LSTM
+T7	Task 959 966	Bi-LSTM
+*	Equiv T6 T7
+T8	Task 682 720	a bidirectional long short term memory
+*	Synonym-of T6 T8
+T9	Task 280 316	multiple granularity representations
+T10	Task 47 91	multiple positional sentence representations
+T11	Task 522 566	multiple positional sentence representations
+T12	Task 1129 1173	multiple positional sentence representations
+*	Equiv T10 T11 T12
+T13	Task 169 190	information retrieval
+T14	Task 246 276	single sentence representation
+T15	Task 459 461	we
+T16	Task 224 276	deep models rely on a single sentence representation
+T17	Task 253 276	sentence representation
+T18	Task 598 621	sentence representation
+T19	Task 627 650	sentence representation
+T20	Task 1083 1106	sentence representation
+*	Equiv T17 T18 T19 T20
+T21	Task 868 881	k-Max pooling
+T22	Task 195 213	question answering
+T23	Task 1338 1356	question answering
+*	Equiv T22 T23
+T24	Task 774 858	aggregating interactions between these different positional sentence representations
+R1	is-a-subtask-of Arg1:T5 Arg2:T13
+R2	is-a-subtask-of Arg1:T5 Arg2:T22
+R3	is-achieved-by Arg1:T17 Arg2:T14
+R4	is-achieved-by Arg1:T17 Arg2:T9
+R5	is-achieved-by Arg1:T17 Arg2:T10
+R6	is-achieved-by Arg1:T5 Arg2:T16
+R7	is-achieved-by Arg1:T5 Arg2:T1
+R8	is-achieved-by Arg1:T5 Arg2:T4
+R9	is-a-subtask-of Arg1:T9 Arg2:T1
+R10	is-a-subtask-of Arg1:T10 Arg2:T4
+R11	is-a-subtask-of Arg1:T14 Arg2:T16
+R12	is-achieved-by Arg1:T4 Arg2:T15
+R13	is-achieved-by Arg1:T10 Arg2:T6
+R14	is-a-subtask-of Arg1:T6 Arg2:T15
+R15	is-a-subtask-of Arg1:T24 Arg2:T15
+R16	is-a-subtask-of Arg1:T21 Arg2:T24
+R17	is-a-subtask-of Arg1:T2 Arg2:T24
+R18	is-a-subtask-of Arg1:T5 Arg2:T3
+R19	Contributes-to Arg1:T16 Arg2:T5
+A1	capture-the-contextualized-local-information R19 -
+R20	Contributes-to Arg1:T1 Arg2:T5
+A2	capture-the-contextualized-local-information R20 -
+R21	Contributes-to Arg1:T15 Arg2:T22
+A3	quality R21 +
+R22	Contributes-to Arg1:T15 Arg2:T3
+A4	quality R22 +

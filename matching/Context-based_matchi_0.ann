@@ -1,0 +1,15 @@
+T1	Task 391 489	finds sequences of entities (path) that relate entities to match within and across these resources
+T2	Task 0 22	Context-based matching
+T3	Task 70 92	Context-based matching
+T4	Task 207 229	Context-based matching
+*	Equiv T2 T3 T4
+T5	Task 340 385	anchors the ontologies to external ontologies
+T6	Task 14 22	matching
+T7	Task 84 92	matching
+T8	Task 221 229	matching
+*	Equiv T6 T7 T8
+T9	Task 504 580	algebras of relations for combining the relations obtained along these paths
+R1	is-achieved-by Arg1:T6 Arg2:T2
+R2	is-a-subtask-of Arg1:T5 Arg2:T2
+R3	is-a-subtask-of Arg1:T1 Arg2:T2
+R4	is-a-subtask-of Arg1:T9 Arg2:T2

@@ -1,0 +1,43 @@
+T1	Task 1303 1363	taxonomy of observed differences, inconsistencies and errors
+T2	Task 258 284	global positioning systems
+T3	Task 312 367	locate spatial entities referring to points of interest
+T4	Task 369 372	POI
+T5	Task 620 623	POI
+*	Equiv T4 T5
+*	Synonym-of T3 T4
+T6	Task 249 252	LBS
+T7	Task 286 289	LBS
+T8	Task 500 503	LBS
+T9	Task 1413 1416	LBS
+T10	Task 1707 1710	LBS
+*	Equiv T6 T7 T8 T9 T10
+T11	Task 224 247	location-based services
+*	Synonym-of T6 T11
+T12	Task 1707 1727	LBS interoperability
+T13	Task 47 86	a benchmark for spatial entity matching
+T14	Task 1174 1213	a benchmark for spatial entity matching
+*	Equiv T13 T14
+T15	Task 304 308	maps
+T16	Task 192 215	geospatial applications
+T17	Task 791 840	discover correspondences between spatial entities
+T18	Task 0 7	PABench
+T19	Task 1165 1172	PABench
+T20	Task 1428 1435	PABench
+*	Equiv T18 T19 T20
+T21	Task 71 86	entity matching
+T22	Task 742 757	entity matching
+T23	Task 1198 1213	entity matching
+T24	Task 1519 1534	entity matching
+*	Equiv T21 T22 T23 T24
+R1	is-achieved-by Arg1:T16 Arg2:T6
+R2	is-achieved-by Arg1:T16 Arg2:T2
+R3	is-a-subtask-of Arg1:T3 Arg2:T6
+R4	is-achieved-by Arg1:T3 Arg2:T15
+R5	is-achieved-by Arg1:T17 Arg2:T21
+R6	is-achieved-by Arg1:T13 Arg2:T18
+R7	is-a-subtask-of Arg1:T1 Arg2:T18
+R8	is-achieved-by Arg1:T12 Arg2:T17
+R9	Contributes-to Arg1:T1 Arg2:T6
+A1	characterization R9 +
+R10	Contributes-to Arg1:T18 Arg2:T6
+A2	spatial-integration R10 

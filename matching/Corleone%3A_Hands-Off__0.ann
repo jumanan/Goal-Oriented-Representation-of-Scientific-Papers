@@ -1,0 +1,43 @@
+T1	Task 1011 1066	soliciting complex information types from crowd workers
+T2	Task 106 108	EM
+T3	Task 165 167	EM
+T4	Task 291 293	EM
+T5	Task 701 703	EM
+T6	Task 830 832	EM
+T7	Task 881 883	EM
+*	Equiv T2 T3 T4 T5 T6 T7
+T8	Task 38 53	entity matching
+T9	Task 89 104	entity matching
+*	Equiv T8 T9
+*	Synonym-of T2 T8
+T10	Task 981 1005	cleaning learning models
+T11	Task 20 33	crowdsourcing
+T12	Task 75 88	crowdsourcing
+T13	Task 318 331	crowdsourcing
+T14	Task 427 440	crowdsourcing
+T15	Task 508 521	crowdsourcing
+T16	Task 668 681	crowdsourcing
+T17	Task 723 736	crowdsourcing
+T18	Task 759 772	crowdsourcing
+*	Equiv T11 T12 T13 T14 T15 T16 T17 T18
+T19	Task 535 577	crowdsources the entire workflow of a task
+T20	Task 0 8	Corleone
+T21	Task 801 809	Corleone
+*	Equiv T20 T21
+T22	Task 955 979	crowdsourced RDBMS joins
+T23	Task 135 176	crowdsource only parts of the EM workflow
+T24	Task 10 33	hands-off crowdsourcing
+T25	Task 498 521	hands-off crowdsourcing
+*	Equiv T24 T25
+T26	Task 523 526	HOC
+T27	Task 621 624	HOC
+T28	Task 813 816	HOC
+*	Equiv T26 T27 T28
+*	Synonym-of T24 T26
+R1	is-achieved-by Arg1:T2 Arg2:T11
+R2	is-achieved-by Arg1:T11 Arg2:T19
+R3	is-achieved-by Arg1:T24 Arg2:T20
+R4	is-achieved-by Arg1:T11 Arg2:T23
+R5	is-achieved-by Arg1:T19 Arg2:T24
+R6	Contributes-to Arg1:T24 Arg2:T11
+A1	scale R6 +

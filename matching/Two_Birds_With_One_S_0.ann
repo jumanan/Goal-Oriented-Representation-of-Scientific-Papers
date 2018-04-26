@@ -1,0 +1,48 @@
+T1	Task 626 674	utilize the HS-Tree to support similarity search
+T2	Task 707 781	identify appropriate tree nodes based on the threshold to answer the query
+T3	Task 850 926	identify promising strings with large possibility to be similar to the query
+T4	Task 76 116	threshold-based string similarity search
+T5	Task 224 264	threshold-based string similarity search
+*	Equiv T4 T5
+T6	Task 172 185	data cleaning
+T7	Task 269 299	top-k string similarity search
+T8	Task 1046 1053	HS-Topk
+T9	Task 953 976	estimate an upper bound
+T10	Task 817 826	HS-Search
+T11	Task 487 539	recursively partition strings into disjoint segments
+T12	Task 459 476	unified framework
+T13	Task 585 592	HS-Tree
+T14	Task 638 645	HS-Tree
+*	Equiv T13 T14
+T15	Task 544 583	build a hierarchical segment tree index
+*	Synonym-of T13 T15
+T16	Task 92 116	String similarity search
+T17	Task 117 141	String similarity search
+T18	Task 240 264	String similarity search
+T19	Task 275 299	String similarity search
+*	Equiv T16 T17 T18 T19
+T20	Task 994 1018	prune dissimilar strings
+T21	Task 172 176;189 201	data integration
+R1	is-a-subtask-of Arg1:T16 Arg2:T6
+R2	is-a-subtask-of Arg1:T16 Arg2:T21
+R3	is-achieved-by Arg1:T16 Arg2:T4
+R4	is-achieved-by Arg1:T16 Arg2:T7
+R5	is-achieved-by Arg1:T16 Arg2:T12
+R6	is-achieved-by Arg1:T4 Arg2:T10
+R7	is-achieved-by Arg1:T7 Arg2:T8
+R8	is-a-subtask-of Arg1:T11 Arg2:T12
+R9	is-a-subtask-of Arg1:T13 Arg2:T12
+R10	is-a-subtask-of Arg1:T1 Arg2:T12
+R11	is-a-subtask-of Arg1:T10 Arg2:T12
+R12	is-a-subtask-of Arg1:T8 Arg2:T12
+R13	is-achieved-by Arg1:T1 Arg2:T2
+R14	is-a-subtask-of Arg1:T2 Arg2:T10
+R15	is-a-subtask-of Arg1:T3 Arg2:T8
+R16	is-a-subtask-of Arg1:T9 Arg2:T8
+R17	is-a-subtask-of Arg1:T20 Arg2:T8
+R18	Contributes-to Arg1:T20 Arg2:T7
+A1	performance R18 +
+R19	Contributes-to Arg1:T10 Arg2:T4
+A2	performance R19 +
+R20	Contributes-to Arg1:T8 Arg2:T7
+A3	performance R20 +

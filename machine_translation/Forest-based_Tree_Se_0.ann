@@ -1,0 +1,18 @@
+T1	Task 363 377;394 413	sequence-based translation models
+T2	Task 382 413	forest-based translation models
+T3	Task 136 180	syntax-based statistical machine translation
+T4	Task 149 180	statistical machine translation
+T5	Task 873 881	Baseline
+T6	Task 0 54	forest-based tree sequence to string translation model
+T7	Task 77 131	forest-based tree sequence to string translation model
+*	Equiv T6 T7
+R1	is-achieved-by Arg1:T4 Arg2:T3
+R2	is-achieved-by Arg1:T3 Arg2:T6
+R3	is-a-subtask-of Arg1:T1 Arg2:T6
+R4	is-a-subtask-of Arg1:T2 Arg2:T6
+R5	is-achieved-by Arg1:T4 Arg2:T1
+R6	is-achieved-by Arg1:T4 Arg2:T2
+R7	Contributes-to Arg1:T5 Arg2:T4
+A1	BLEU R7 25.68
+R8	Contributes-to Arg1:T6 Arg2:T4
+A2	BLEU R8 28.83

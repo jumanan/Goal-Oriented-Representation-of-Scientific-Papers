@@ -1,0 +1,24 @@
+T1	Task 411 461;473 501	map data from huge and complex relational schemata to more abstract ontologies
+T2	Task 340 370	manually curating the mappings
+T3	Task 77 82	R2RML
+T4	Task 92 97	R2RML
+T5	Task 307 312	R2RML
+T6	Task 1103 1108	R2RML
+*	Equiv T3 T4 T5 T6
+T7	Task 176 238	applications built on top of the W3C Semantic Technology stack
+T8	Task 532 548	mapping creation
+T9	Task 648 664	mapping creation
+*	Equiv T8 T9
+T10	Task 591 607	a mapping editor
+T11	Task 98 164	defines a language to express mappings from relational data to RDF
+T12	Task 1090 1122	constructing R2RML mapping rules
+R1	is-achieved-by Arg1:T11 Arg2:T3
+R2	is-achieved-by Arg1:T2 Arg2:T1
+R3	is-achieved-by Arg1:T8 Arg2:T2
+R4	is-a-subtask-of Arg1:T12 Arg2:T3
+R5	Contributes-to Arg1:T11 Arg2:T7
+A1	integrate-relational-data R5 +
+R6	Contributes-to Arg1:T2 Arg2:T3
+A2	difficulty R6 major obstacle
+R7	Contributes-to Arg1:T10 Arg2:T8
+A3	human-effort R7 reduce

@@ -1,0 +1,12 @@
+T1	Task 70 105	depth-first branch-and-bound search
+T2	Task 395 430	depth-first branch-and-bound search
+*	Equiv T1 T2
+T3	Task 871 899	lexicalised reordering model
+T4	Task 151 170	machine translation
+T5	Task 857 865	baseline
+T6	Task 0 23	Source-side preordering
+T7	Task 46 65	logistic regression
+T8	Task 194 213	logistic regression
+*	Equiv T7 T8
+R1	is-achieved-by Arg1:T6 Arg2:T3
+R2	is-achieved-by Arg1:T4 Arg2:T5

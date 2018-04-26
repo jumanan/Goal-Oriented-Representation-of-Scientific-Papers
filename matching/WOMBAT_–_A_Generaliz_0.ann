@@ -1,0 +1,27 @@
+T1	Task 541 555	generalisation
+T2	Task 0 6	Wombat
+T3	Task 400 406	Wombat
+T4	Task 522 528	Wombat
+T5	Task 679 685	Wombat
+T6	Task 766 772	Wombat
+*	Equiv T2 T3 T4 T5 T6
+T7	Task 593 633	traverse the space of link specification
+T8	Task 433 475	discovery of links between knowledge bases
+T9	Task 802 823	supervised approaches
+T10	Task 560 589	an upward refinement operator
+T11	Task 135 171	updating the links to other datasets
+T12	Task 306 323	positive examples
+T13	Task 503 520	positive examples
+*	Equiv T12 T13
+R1	is-achieved-by Arg1:T8 Arg2:T2
+R2	is-a-subtask-of Arg1:T12 Arg2:T2
+R3	is-achieved-by Arg1:T7 Arg2:T1
+R4	is-achieved-by Arg1:T1 Arg2:T10
+R5	is-a-subtask-of Arg1:T7 Arg2:T2
+R6	is-achieved-by Arg1:T8 Arg2:T9
+R7	Contributes-to Arg1:T2 Arg2:T8
+A1	scalability R7 +
+R8	Contributes-to Arg1:T2 Arg2:T8
+A2	performance R8 x
+R9	Contributes-to Arg1:T9 Arg2:T8
+A3	performance R9 <x

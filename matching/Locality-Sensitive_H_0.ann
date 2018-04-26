@@ -1,0 +1,24 @@
+T1	Task 226 278	transforming the matching problem into a LSH problem
+T2	Task 519 544	state-of-the-art matchers
+T3	Task 52 69	ontology matching
+T4	Task 381 398	ontology matching
+*	Equiv T3 T4
+T5	Task 70 80	this paper
+T6	Task 136 168	locality-sensitive hashing (LSH)
+*	Synonym-of T5 T6
+T7	Task 186 212	matching of big ontologies
+T8	Task 173 212	string-based matching of big ontologies
+R1	is-achieved-by Arg1:T3 Arg2:T8
+R2	is-achieved-by Arg1:T8 Arg2:T1
+R3	is-achieved-by Arg1:T7 Arg2:T8
+R4	is-achieved-by Arg1:T7 Arg2:T2
+R5	is-achieved-by Arg1:T3 Arg2:T7
+R6	is-achieved-by Arg1:T1 Arg2:T5
+R7	Contributes-to Arg1:T5 Arg2:T3
+A1	speed R7 >y
+R8	Contributes-to Arg1:T2 Arg2:T3
+A2	speed R8 y
+R9	Contributes-to Arg1:T5 Arg2:T3
+A3	quality R9 x
+R10	Contributes-to Arg1:T2 Arg2:T3
+A4	quality R10 x

@@ -1,0 +1,24 @@
+T1	Task 11 19	features
+T2	Task 147 155	features
+T3	Task 463 471	features
+*	Equiv T1 T2 T3
+T4	Task 36 55	machine translation
+T5	Task 163 182	machine translation
+*	Equiv T4 T5
+T6	Task 196 201	Hiero
+T7	Task 121 155	add a large number of new features
+T8	Task 255 267	syntax-based
+T9	Task 67 99	Margin Infused Relaxed Algorithm
+T10	Task 255 279	syntax-based translation
+T11	Task 202 239	hierarchical phrase-based translation
+R1	is-achieved-by Arg1:T4 Arg2:T11
+R2	is-achieved-by Arg1:T4 Arg2:T10
+R3	is-achieved-by Arg1:T7 Arg2:T9
+R4	is-a-subtask-of Arg1:T7 Arg2:T4
+R5	is-achieved-by Arg1:T11 Arg2:T6
+R6	is-achieved-by Arg1:T10 Arg2:T8
+R7	is-a-subtask-of Arg1:T1 Arg2:T7
+R8	Contributes-to Arg1:T9 Arg2:T4
+A1	quality R8 >x
+R9	Contributes-to Arg1:T1 Arg2:T4
+A2	quality R9 +

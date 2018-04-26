@@ -1,0 +1,37 @@
+T1	Task 132 145	textual query
+T2	Task 809 835	triple-based co-occurrence
+T3	Task 364 379	query rewriting
+T4	Task 1045 1057	n-gram model
+T5	Task 712 779	determine the most suitable derived words from linguistic resources
+T6	Task 221 246	question answering system
+T7	Task 639 675	graph-structured RDF knowledge bases
+T8	Task 562 572	this paper
+T9	Task 574 576	we
+T10	Task 677 679	we
+T11	Task 781 783	we
+*	Equiv T9 T10 T11
+*	Synonym-of T8 T9
+T12	Task 898 947	bootstrapped with three statistical distributions
+T13	Task 449 492	yielding a large number of irrelevant words
+T14	Task 687 708	a Hidden Markov Model
+T15	Task 344 359	Query expansion
+T16	Task 840 881	recognizing co-occurred words in RDF data
+R1	is-achieved-by Arg1:T6 Arg2:T1
+R2	is-achieved-by Arg1:T1 Arg2:T15
+R3	is-achieved-by Arg1:T1 Arg2:T3
+R4	is-achieved-by Arg1:T13 Arg2:T15
+R5	is-achieved-by Arg1:T13 Arg2:T3
+R6	is-achieved-by Arg1:T3 Arg2:T8
+R7	is-achieved-by Arg1:T5 Arg2:T14
+R8	is-a-subtask-of Arg1:T5 Arg2:T8
+R9	is-achieved-by Arg1:T16 Arg2:T2
+R10	is-a-subtask-of Arg1:T12 Arg2:T2
+R11	is-achieved-by Arg1:T16 Arg2:T4
+R12	Contributes-to Arg1:T13 Arg2:T6
+A1	run-time R12 -
+R13	Contributes-to Arg1:T13 Arg2:T6
+A2	accuracy R13 -
+R14	Contributes-to Arg1:T2 Arg2:T16
+A3	performance R14 x
+R15	Contributes-to Arg1:T4 Arg2:T16
+A4	performance R15 <x

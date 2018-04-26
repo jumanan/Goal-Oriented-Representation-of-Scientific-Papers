@@ -1,0 +1,26 @@
+T1	Task 74 107	a novel approach based on NSGA-II
+T2	Task 40 47	NSGA-II
+T3	Task 100 107	NSGA-II
+*	Equiv T2 T3
+T4	Task 226 244	linguistic measure
+T5	Task 207 224	syntactic measure
+T6	Task 149 205	aggregation of three different basic similarity measures
+T7	Task 249 271	taxonomy-based measure
+T8	Task 444 453	alignment
+T9	Task 466 475	alignment
+*	Equiv T8 T9
+T10	Task 186 205	similarity measures
+R1	is-achieved-by Arg1:T10 Arg2:T5
+R2	is-achieved-by Arg1:T10 Arg2:T4
+R3	is-achieved-by Arg1:T10 Arg2:T7
+R4	is-achieved-by Arg1:T8 Arg2:T10
+R5	is-a-subtask-of Arg1:T6 Arg2:T1
+R6	is-achieved-by Arg1:T10 Arg2:T6
+R7	is-a-subtask-of Arg1:T2 Arg2:T1
+R8	is-achieved-by Arg1:T8 Arg2:T1
+R9	Contributes-to Arg1:T1 Arg2:T8
+A1	quality R9 +
+R10	Contributes-to Arg1:T1 Arg2:T8
+A2	effective R10 +
+R11	Contributes-to Arg1:T2 Arg2:T6
+A3	optimize R11 +

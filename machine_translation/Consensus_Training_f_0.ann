@@ -1,0 +1,11 @@
+T1	Task 23 41	consensus decoding
+T2	Task 717 735	consensus decoding
+*	Equiv T1 T2
+T3	Task 867 883	Viterbi decoding
+T4	Task 33 41	decoding
+T5	Task 325 333	decoding
+T6	Task 727 735	decoding
+T7	Task 875 883	decoding
+*	Equiv T4 T5 T6 T7
+R1	is-achieved-by Arg1:T4 Arg2:T3
+R2	is-achieved-by Arg1:T4 Arg2:T1

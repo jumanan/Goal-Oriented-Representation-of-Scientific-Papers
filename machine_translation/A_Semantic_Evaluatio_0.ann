@@ -1,0 +1,31 @@
+T1	Task 758 767	templates
+T2	Task 447 450	SMT
+T3	Task 533 536	SMT
+*	Equiv T2 T3
+T4	Task 25 59	machine translation lexical choice
+T5	Task 375 409	machine translation lexical choice
+*	Equiv T4 T5
+T6	Task 331 334	WSD
+T7	Task 491 494	WSD
+T8	Task 574 577	WSD
+T9	Task 780 783	WSD
+*	Equiv T6 T7 T8 T9
+T10	Task 635 679	local context models based on source phrases
+T11	Task 25 44	machine translation
+T12	Task 126 145	machine translation
+T13	Task 375 394	machine translation
+*	Equiv T11 T12 T13
+T14	Task 448 450	MT
+T15	Task 534 536	MT
+*	Equiv T14 T15
+*	Synonym-of T11 T14
+T16	Task 684 698	target n-grams
+T17	Task 434 450	phrase-based SMT
+T18	Task 715 741	representations of context
+R1	is-achieved-by Arg1:T11 Arg2:T2
+R2	is-achieved-by Arg1:T2 Arg2:T17
+R3	is-a-subtask-of Arg1:T4 Arg2:T17
+R4	is-a-subtask-of Arg1:T1 Arg2:T6
+R5	is-achieved-by Arg1:T18 Arg2:T10
+R6	is-achieved-by Arg1:T18 Arg2:T16
+R7	is-achieved-by Arg1:T18 Arg2:T1

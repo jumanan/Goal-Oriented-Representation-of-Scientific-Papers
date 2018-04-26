@@ -1,0 +1,37 @@
+T1	Task 422 432	this paper
+T2	Task 587 641	joint approach to entity and word-sense disambiguation
+*	Synonym-of T1 T2
+T3	Task 522 559	graph structure of the knowledge base
+T4	Task 162 203	linking text documents to the Web of Data
+T5	Task 78 92	disambiguation
+T6	Task 118 132	disambiguation
+T7	Task 627 641	disambiguation
+T8	Task 1072 1086	disambiguation
+T9	Task 1137 1151	disambiguation
+*	Equiv T5 T6 T7 T8 T9
+T10	Task 798 810;828 841	disambiguate common nouns
+T11	Task 798 810;764 773	disambiguate entities
+T12	Task 283 326	word or concept distribution over Wikipedia
+T13	Task 732 773	systems that target mainly named entities
+T14	Task 11 31	semantic relatedness
+T15	Task 93 113	semantic relatedness
+T16	Task 447 467	semantic relatedness
+*	Equiv T14 T15 T16
+R1	is-a-subtask-of Arg1:T14 Arg2:T4
+R2	is-a-subtask-of Arg1:T5 Arg2:T4
+R3	is-achieved-by Arg1:T14 Arg2:T12
+R4	is-achieved-by Arg1:T5 Arg2:T12
+R5	is-achieved-by Arg1:T14 Arg2:T3
+R6	is-achieved-by Arg1:T14 Arg2:T1
+R7	is-achieved-by Arg1:T5 Arg2:T1
+R8	is-achieved-by Arg1:T1 Arg2:T3
+R9	is-achieved-by Arg1:T14 Arg2:T13
+R10	is-achieved-by Arg1:T5 Arg2:T13
+R11	is-achieved-by Arg1:T5 Arg2:T11
+R12	is-achieved-by Arg1:T5 Arg2:T10
+R13	is-achieved-by Arg1:T11 Arg2:T1
+R14	is-achieved-by Arg1:T10 Arg2:T1
+R15	Contributes-to Arg1:T1 Arg2:T14
+A1	performance R15 +
+R16	Contributes-to Arg1:T1 Arg2:T5
+A2	performance R16 +

@@ -1,0 +1,7 @@
+T1	Task 24 38	word alignment
+T2	Task 306 320	word alignment
+*	Equiv T1 T2
+T3	Task 508 520	GIZA++ union
+T4	Task 521 529	Baseline
+*	Synonym-of T3 T4
+R1	is-achieved-by Arg1:T1 Arg2:T3

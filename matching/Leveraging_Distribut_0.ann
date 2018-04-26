@@ -1,0 +1,41 @@
+T1	Task 688 705	ensemble learning
+T2	Task 432 439	coCoref
+T3	Task 833 840	coCoref
+T4	Task 1006 1013	coCoref
+*	Equiv T2 T3 T4
+T5	Task 148 164	User involvement
+T6	Task 284 300	User involvement
+T7	Task 670 686	User involvement
+T8	Task 1092 1108	User involvement
+*	Equiv T5 T6 T7 T8
+T9	Task 566 655	aggregate all distributed user-judged coreference results and resolve their disagreements
+T10	Task 45 64	consensus partition
+T11	Task 491 510	consensus partition
+T12	Task 535 554	consensus partition
+T13	Task 726 745	consensus partition
+*	Equiv T10 T11 T12 T13
+T14	Task 749 791	automatically identify coreferent entities
+T15	Task 123 146	Linked Data integration
+T16	Task 69 87	Entity coreference
+T17	Task 88 106	Entity coreference
+T18	Task 515 533	Entity coreference
+T19	Task 918 936	Entity coreference
+*	Equiv T16 T17 T18 T19
+T20	Task 230 258	identify coreferent entities
+T21	Task 763 791	identify coreferent entities
+*	Equiv T20 T21
+*	Synonym-of T16 T20
+T22	Task 11 40	distributed human computation
+T23	Task 457 486	distributed human computation
+*	Equiv T22 T23
+R1	is-a-subtask-of Arg1:T16 Arg2:T15
+R2	is-achieved-by Arg1:T16 Arg2:T2
+R3	is-a-subtask-of Arg1:T5 Arg2:T2
+R4	is-a-subtask-of Arg1:T9 Arg2:T2
+R5	is-achieved-by Arg1:T9 Arg2:T10
+R6	is-achieved-by Arg1:T14 Arg2:T1
+R7	is-a-subtask-of Arg1:T14 Arg2:T2
+R8	is-achieved-by Arg1:T5 Arg2:T22
+R9	is-achieved-by Arg1:T16 Arg2:T14
+R10	Contributes-to Arg1:T2 Arg2:T16
+A1	accuracy R10 +

@@ -1,0 +1,19 @@
+T1	Task 408 415	HIERSUM
+T2	Task 614 621	HIERSUM
+*	Equiv T1 T2
+T3	Task 29 57	multi-document summarization
+T4	Task 123 151	multi-document summarization
+*	Equiv T3 T4
+R1	is-achieved-by Arg1:T3 Arg2:T1
+R2	Contributes-to Arg1:T1 Arg2:T3
+A1	ROUGE-1 R2 30.5
+R3	Contributes-to Arg1:T1 Arg2:T3
+A2	ROUGE-2 R3 6.4
+R4	Contributes-to Arg1:T1 Arg2:T3
+A3	ROUGE-SU4 R4 9.2
+R5	Contributes-to Arg1:T1 Arg2:T3
+A4	ROUGE-1 R5 34.6
+R6	Contributes-to Arg1:T1 Arg2:T3
+A5	ROUGE-2 R6 7.3
+R7	Contributes-to Arg1:T1 Arg2:T3
+A6	ROUGE-SU4 R7 10.4

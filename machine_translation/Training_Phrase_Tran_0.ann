@@ -1,0 +1,15 @@
+T1	Task 689 697;732 746	training phrase models
+T2	Task 0 15;27 34	training phrase models
+*	Equiv T1 T2
+T3	Task 40 55	leaving-one-out
+T4	Task 321 336	leaving-one-out
+*	Equiv T3 T4
+T5	Task 134 178	phrase-based statistical machine translation
+T6	Task 668 685	reordering models
+T7	Task 645 663	single word lexica
+R1	is-a-subtask-of Arg1:T7 Arg2:T1
+R2	is-a-subtask-of Arg1:T6 Arg2:T1
+R3	Contributes-to Arg1:T1 Arg2:T5
+A1	quality R3 +
+R4	Contributes-to Arg1:T3 Arg2:T5
+A2	over-fitting R4 -

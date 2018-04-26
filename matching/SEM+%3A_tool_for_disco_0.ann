@@ -1,0 +1,27 @@
+T1	Task 765 784	a blocking approach
+T2	Task 788 835	group possible matching entities into one block
+*	Synonym-of T1 T2
+T3	Task 0 4	SEM+
+T4	Task 585 589	SEM+
+T5	Task 594 598	SEM+
+T6	Task 908 912	SEM+
+*	Equiv T3 T4 T5 T6
+T7	Task 308 343	interlinking between these concepts
+T8	Task 27 42	concept mapping
+T9	Task 562 577	concept mapping
+*	Equiv T8 T9
+*	Synonym-of T7 T8
+T10	Task 407 427	identity recognition
+T11	Task 616 667	Information Entropy based Weighted Similarity Model
+T12	Task 449 509	developing applications that use data from multiple sources.
+T13	Task 679 718	semantic similarity between entity data
+T14	Task 386 402	data integration
+R1	is-a-subtask-of Arg1:T7 Arg2:T10
+R2	is-a-subtask-of Arg1:T7 Arg2:T14
+R3	is-a-subtask-of Arg1:T10 Arg2:T12
+R4	is-a-subtask-of Arg1:T14 Arg2:T12
+R5	is-achieved-by Arg1:T7 Arg2:T3
+R6	is-achieved-by Arg1:T13 Arg2:T11
+R7	is-a-subtask-of Arg1:T13 Arg2:T7
+R8	is-a-subtask-of Arg1:T11 Arg2:T3
+R9	is-a-subtask-of Arg1:T1 Arg2:T3

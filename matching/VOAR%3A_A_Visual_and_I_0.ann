@@ -1,0 +1,35 @@
+T1	Task 530 539	filtering
+T2	Task 0 4	VOAR
+T3	Task 314 318	VOAR
+T4	Task 567 571	VOAR
+T5	Task 1059 1063	VOAR
+*	Equiv T2 T3 T4 T5
+T6	Task 588 668	external ontology matching systems that implement a specific alignment interface
+T7	Task 448 484	manually create/edit correspondences
+T8	Task 352 384	ontology alignment visualization
+T9	Task 1089 1131	manipulation of alignments at schema level
+T10	Task 541 546	merge
+T11	Task 326 347	web-based environment
+T12	Task 1162 1183	web-based environment
+*	Equiv T11 T12
+T13	Task 352 370;388 401	ontology alignment manipulation
+T14	Task 746 809	Evaluating multiple alignments together against a reference one
+T15	Task 489 528	apply a set of operations on alignments
+T16	Task 548 558	difference
+T17	Task 110 157	interoperability between ontology-based systems
+T18	Task 30 48	Ontology alignment
+T19	Task 61 79	Ontology alignment
+T20	Task 352 370	Ontology alignment
+*	Equiv T18 T19 T20
+R1	is-achieved-by Arg1:T17 Arg2:T18
+R2	is-achieved-by Arg1:T8 Arg2:T11
+R3	is-achieved-by Arg1:T13 Arg2:T2
+R4	is-achieved-by Arg1:T11 Arg2:T2
+R5	is-achieved-by Arg1:T7 Arg2:T2
+R6	is-achieved-by Arg1:T15 Arg2:T2
+R7	is-achieved-by Arg1:T15 Arg2:T1
+R8	is-achieved-by Arg1:T15 Arg2:T10
+R9	is-achieved-by Arg1:T15 Arg2:T16
+R10	is-achieved-by Arg1:T6 Arg2:T2
+R11	is-achieved-by Arg1:T14 Arg2:T2
+R12	is-achieved-by Arg1:T9 Arg2:T2

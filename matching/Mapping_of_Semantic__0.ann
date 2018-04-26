@@ -1,0 +1,39 @@
+T1	Task 159 169	user tasks
+T2	Task 1058 1087	semantic relation interpreter
+T3	Task 719 729	Multiagent
+T4	Task 883 893	Multiagent
+*	Equiv T3 T4
+T5	Task 107 127	Machine Intelligence
+T6	Task 340 413	identify and take advantage of relationships that exist within ontologies
+T7	Task 656 672	ontology mapping
+T8	Task 226 228	QA
+T9	Task 206 224	Question Answering
+T10	Task 959 977	Question Answering
+*	Equiv T9 T10
+*	Synonym-of T8 T9
+T11	Task 189 202	search engine
+T12	Task 11 23	Semantic Web
+T13	Task 78 90	Semantic Web
+T14	Task 276 288	Semantic Web
+T15	Task 932 944	Semantic Web
+*	Equiv T12 T13 T14 T15
+T16	Task 231 241	Ontologies
+T17	Task 403 413	Ontologies
+T18	Task 441 451	Ontologies
+T19	Task 526 536	Ontologies
+T20	Task 613 623	Ontologies
+T21	Task 828 838	Ontologies
+*	Equiv T16 T17 T18 T19 T20 T21
+R1	is-achieved-by Arg1:T1 Arg2:T11
+R2	is-achieved-by Arg1:T1 Arg2:T8
+R3	is-achieved-by Arg1:T5 Arg2:T12
+R4	is-a-subtask-of Arg1:T16 Arg2:T12
+R5	is-a-subtask-of Arg1:T6 Arg2:T12
+R6	is-achieved-by Arg1:T7 Arg2:T3
+R7	is-a-subtask-of Arg1:T2 Arg2:T3
+R8	Contributes-to Arg1:T12 Arg2:T11
+A1	efficiency R8 +
+R9	Contributes-to Arg1:T12 Arg2:T8
+A2	efficiency R9 +
+R10	Contributes-to Arg1:T2 Arg2:T7
+A3	performance R10 +

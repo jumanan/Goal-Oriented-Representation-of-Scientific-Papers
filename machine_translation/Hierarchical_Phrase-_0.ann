@@ -1,0 +1,36 @@
+T1	Task 0 37	Hierarchical phrase-based translation
+T2	Task 526 531	HiFST
+T3	Task 634 639	HiFST
+*	Equiv T2 T3
+T4	Task 322 324	LM
+T5	Task 653 657	SCFG
+T6	Task 206 209	FSA
+T7	Task 408 411	FSA
+T8	Task 543 546	FSA
+*	Equiv T6 T7 T8
+T9	Task 536 541	HiPDT
+T10	Task 671 676	HiPDT
+*	Equiv T9 T10
+T11	Task 216 233	pushdown automata
+T12	Task 235 238	PDA
+*	Synonym-of T11 T12
+T13	Task 536 541	HiPDT
+T14	Task 671 676	HiPDT
+*	Equiv T13 T14
+T15	Task 26 53	translation representations
+T16	Task 82 109	translation representations
+*	Equiv T15 T16
+T17	Task 526 531	HiFST
+T18	Task 634 639	HiFST
+*	Equiv T17 T18
+R1	is-achieved-by Arg1:T15 Arg2:T6
+R2	is-achieved-by Arg1:T15 Arg2:T11
+R3	is-achieved-by Arg1:T17 Arg2:T2
+R4	is-achieved-by Arg1:T9 Arg2:T13
+R5	is-a-subtask-of Arg1:T6 Arg2:T17
+R6	is-a-subtask-of Arg1:T6 Arg2:T9
+R7	is-a-subtask-of Arg1:T11 Arg2:T9
+R8	is-a-subtask-of Arg1:T4 Arg2:T1
+R9	is-a-subtask-of Arg1:T5 Arg2:T1
+R10	is-achieved-by Arg1:T1 Arg2:T17
+R11	is-achieved-by Arg1:T1 Arg2:T9

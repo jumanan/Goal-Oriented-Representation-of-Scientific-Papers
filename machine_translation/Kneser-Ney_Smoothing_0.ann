@@ -1,0 +1,12 @@
+T1	Task 87 112	Kneser-Ney (KN) smoothing
+T2	Task 11 20	smoothing
+T3	Task 103 112	smoothing
+T4	Task 174 183	smoothing
+T5	Task 204 213	smoothing
+T6	Task 360 369	smoothing
+T7	Task 487 496	smoothing
+T8	Task 594 603	smoothing
+*	Equiv T2 T3 T4 T5 T6 T7 T8
+T9	Task 682 696	word alignment
+R1	is-achieved-by Arg1:T2 Arg2:T1
+R2	is-a-subtask-of Arg1:T2 Arg2:T9

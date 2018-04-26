@@ -1,0 +1,31 @@
+T1	Task 168 174	NetSum
+T2	Task 168 174	NetSum
+T3	Task 700 701	1
+T4	Task 168 174	NetSum
+*	Synonym-of T3 T4
+T5	Task 366 373	RankNet
+T6	Task 10 39	Single-document Summarization
+T7	Task 168 174	NetSum
+T8	Task 168 174	NetSum
+T9	Task 38 39	n
+T10	Task 55 56	n
+T11	Task 137 138	n
+T12	Task 146 147	n
+T13	Task 260 261	n
+T14	Task 307 308	n
+T15	Task 401 402	n
+T16	Task 457 458	n
+T17	Task 564 565	n
+T18	Task 616 617	n
+T19	Task 688 689	n
+T20	Task 711 712	n
+*	Equiv T9 T10 T11 T12 T13 T14 T15 T16 T17 T18 T19 T20
+*	Synonym-of T8 T9
+R1	is-achieved-by Arg1:T6 Arg2:T7
+R2	is-achieved-by Arg1:T7 Arg2:T5
+R3	is-achieved-by Arg1:T8 Arg2:T3
+R4	is-achieved-by Arg1:T8 Arg2:T1
+R5	is-achieved-by Arg1:T8 Arg2:T2
+R6	is-achieved-by Arg1:T8 Arg2:T3
+R7	is-achieved-by Arg1:T8 Arg2:T1
+R8	is-achieved-by Arg1:T8 Arg2:T2

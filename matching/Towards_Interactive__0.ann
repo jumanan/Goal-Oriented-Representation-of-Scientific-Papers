@@ -1,0 +1,43 @@
+T1	Task 609 611	we
+T2	Task 740 742	we
+T3	Task 914 916	we
+T4	Task 1010 1012	we
+T5	Task 1176 1178	we
+*	Equiv T1 T2 T3 T4 T5
+T6	Task 952 1008	optimal ordering of rules and predicates in this context
+T7	Task 445 463	inspect the result
+T8	Task 647 668	the matching function
+T9	Task 227 269	design and maintain sets of matching rules
+T10	Task 310 329	a “debugging” cycle
+T11	Task 734 737	CNF
+T12	Task 709 732	conjunctive normal form
+*	Synonym-of T11 T12
+T13	Task 762 774	“early exit”
+T14	Task 351 385	modification to the matching rules
+T15	Task 734 737	CNF
+T16	Task 672 732	a set of rules where each rule is in conjunctive normal form
+*	Synonym-of T15 T16
+T17	Task 60 80	Entity Matching (EM)
+T18	Task 81 148	identifies pairs of records referring to the same real-world entity
+*	Synonym-of T17 T18
+T19	Task 387 443	apply the modified rules to a labeled subset of the data
+T20	Task 779 796	“dynamic memoing”
+T21	Task 1026 1062	techniques to reuse previous results
+R1	is-achieved-by Arg1:T17 Arg2:T9
+R2	is-a-subtask-of Arg1:T10 Arg2:T9
+R3	is-a-subtask-of Arg1:T14 Arg2:T10
+R4	is-a-subtask-of Arg1:T19 Arg2:T10
+R5	is-a-subtask-of Arg1:T7 Arg2:T10
+R6	is-achieved-by Arg1:T8 Arg2:T9
+R7	is-achieved-by Arg1:T8 Arg2:T15
+R8	is-a-subtask-of Arg1:T11 Arg2:T15
+R9	is-achieved-by Arg1:T15 Arg2:T1
+R10	is-achieved-by Arg1:T9 Arg2:T1
+R11	is-a-subtask-of Arg1:T13 Arg2:T1
+R12	is-a-subtask-of Arg1:T20 Arg2:T1
+R13	is-a-subtask-of Arg1:T6 Arg2:T1
+R14	is-achieved-by Arg1:T21 Arg2:T1
+R15	Contributes-to Arg1:T1 Arg2:T19
+A1	computation R15 limit
+R16	Contributes-to Arg1:T1 Arg2:T17
+A2	time R16 reduction

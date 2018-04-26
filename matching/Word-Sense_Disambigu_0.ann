@@ -1,0 +1,37 @@
+T1	Task 369 405	word-sense disambiguation techniques
+T2	Task 411 438	lexical similarity measures
+T3	Task 857 878	disambiguation method
+T4	Task 959 980	disambiguation method
+*	Equiv T3 T4
+T5	Task 1310 1335	term-weighting techniques
+T6	Task 498 562	creation of virtual documents from concept and sense definitions
+T7	Task 236 250	mapping system
+T8	Task 1088 1102	mapping system
+*	Equiv T7 T8
+T9	Task 30 46	Ontology mapping
+T10	Task 132 148	Ontology mapping
+T11	Task 1176 1192	Ontology mapping
+*	Equiv T9 T10 T11
+T12	Task 1435 1485	weighting terms according to their ontology origin
+T13	Task 272 291	similarity measures
+T14	Task 419 438	similarity measures
+*	Equiv T13 T14
+T15	Task 191 211	information exchange
+T16	Task 216 232	data integration
+T17	Task 692 762	document similarities between the concept document and sense documents
+R1	is-a-subtask-of Arg1:T9 Arg2:T15
+R2	is-a-subtask-of Arg1:T9 Arg2:T16
+R3	is-achieved-by Arg1:T9 Arg2:T7
+R4	is-a-subtask-of Arg1:T13 Arg2:T7
+R5	is-achieved-by Arg1:T13 Arg2:T2
+R6	is-achieved-by Arg1:T3 Arg2:T1
+R7	is-achieved-by Arg1:T5 Arg2:T12
+R8	is-a-subtask-of Arg1:T6 Arg2:T3
+R9	is-a-subtask-of Arg1:T5 Arg2:T3
+R10	is-a-subtask-of Arg1:T17 Arg2:T3
+R11	Contributes-to Arg1:T3 Arg2:T2
+A1	performance R11 +
+R12	Contributes-to Arg1:T3 Arg2:T7
+A2	quality R12 +
+R13	Contributes-to Arg1:T12 Arg2:T7
+A3	quality R13 +

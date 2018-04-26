@@ -1,0 +1,22 @@
+T1	Task 114 124	this paper
+T2	Task 392 429	SRR Document Object Model (DOM) Trees
+T3	Task 322 353	an SRR simplification algorithm
+T4	Task 152 162;175 247	extracting the Search Result Record (SRR) data items from different search engines
+T5	Task 509 561	Data items are normalized in local and global domain
+T6	Task 266 308	detects SRRs for a given Web search result
+T7	Task 431 486	SRRs and their data items (or properties) are extracted
+T8	Task 663 670;674 679	merging SRRs
+T9	Task 167 200	matching the Search Result Record
+*	Synonym-of T8 T9
+R1	is-achieved-by Arg1:T4 Arg2:T1
+R2	is-achieved-by Arg1:T8 Arg2:T1
+R3	is-a-subtask-of Arg1:T6 Arg2:T1
+R4	is-a-subtask-of Arg1:T3 Arg2:T1
+R5	is-a-subtask-of Arg1:T7 Arg2:T1
+R6	is-a-subtask-of Arg1:T5 Arg2:T1
+R7	Contributes-to Arg1:T3 Arg2:T2
+A1	complexity R7 
+R8	Contributes-to Arg1:T1 Arg2:T8
+A2	quality R8 +
+R9	Contributes-to Arg1:T1 Arg2:T4
+A3	quality R9 +

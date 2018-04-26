@@ -1,0 +1,5 @@
+T1	Task 0 15	sentence fusion
+T2	Task 282 297	sentence fusion
+T3	Task 395 410	sentence fusion
+T4	Task 580 595	sentence fusion
+*	Equiv T1 T2 T3 T4

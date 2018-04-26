@@ -1,0 +1,22 @@
+T1	Task 41 45	Atom
+T2	Task 226 230	Atom
+T3	Task 546 550	Atom
+T4	Task 723 727	Atom
+T5	Task 894 898	Atom
+*	Equiv T1 T2 T3 T4 T5
+T6	Task 760 798	mappings containing is-a relationships
+T7	Task 0 13	target-driven
+T8	Task 384 397	target-driven
+*	Equiv T7 T8
+T9	Task 192 218	taxonomy merging algorithm
+T10	Task 134 173	integration of multiple such ontologies
+T11	Task 760 779;813 839	mappings containing equivalence relationships
+R1	is-achieved-by Arg1:T9 Arg2:T1
+R2	is-achieved-by Arg1:T10 Arg2:T9
+R3	is-achieved-by Arg1:T7 Arg2:T1
+R4	is-a-subtask-of Arg1:T6 Arg2:T1
+R5	is-a-subtask-of Arg1:T11 Arg2:T1
+R6	Contributes-to Arg1:T1 Arg2:T10
+A1	semantic-heterogeneity R6 -
+R7	Contributes-to Arg1:T1 Arg2:T10
+A2	understandability R7 +

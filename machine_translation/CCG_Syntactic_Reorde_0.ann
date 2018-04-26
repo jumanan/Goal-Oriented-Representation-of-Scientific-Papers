@@ -1,0 +1,8 @@
+T1	Task 493 495	ST
+T2	Task 819 841	lexicalized reordering
+T3	Task 4 24	syntactic reordering
+T4	Task 69 113	Statistical phrase-based machine translation
+R1	is-achieved-by Arg1:T3 Arg2:T2
+R2	is-achieved-by Arg1:T3 Arg2:T1
+R3	Contributes-to Arg1:T3 Arg2:T4
+A1	quality R3 +

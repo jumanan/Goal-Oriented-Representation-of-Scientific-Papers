@@ -1,0 +1,7 @@
+T1	Task 186 221	the rhetorical status of statements
+T2	Task 968 974	System
+R1	is-achieved-by Arg1:T1 Arg2:T2
+R2	Contributes-to Arg1:T2 Arg2:T1
+A1	Accuracy R2 0.73
+R3	Contributes-to Arg1:T2 Arg2:T1
+A2	Macro-F R3 0.5

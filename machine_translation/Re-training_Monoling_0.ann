@@ -1,0 +1,17 @@
+T1	Task 12 30	monolingual parser
+T2	Task 161 179	monolingual parser
+T3	Task 428 446	monolingual parser
+*	Equiv T1 T2 T3
+T4	Task 652 668	forced alignment
+T5	Task 47 60	syntactic SMT
+T6	Task 82 95	syntactic SMT
+*	Equiv T5 T6
+T7	Task 58 60	MT
+T8	Task 93 95	MT
+*	Equiv T7 T8
+T9	Task 142 156	word alignment
+R1	is-achieved-by Arg1:T7 Arg2:T5
+R2	is-a-subtask-of Arg1:T9 Arg2:T5
+R3	is-a-subtask-of Arg1:T1 Arg2:T5
+R4	Contributes-to Arg1:T1 Arg2:T5
+A1	consistency-between-parse-trees-and-alignment-matrices R4 -

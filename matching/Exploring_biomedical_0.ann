@@ -1,0 +1,25 @@
+T1	Task 354 384	ontology reuse and development
+T2	Task 262 295	Understanding ontology structures
+T3	Task 695 717	Betweenness Centrality
+T4	Task 234 260	verifying data consistency
+T5	Task 671 690	Modularity Analysis
+T6	Task 1082 1165	validate identified communities with their mutual mentions in scientific literature
+T7	Task 577 631	analysis of biomedical ontology mapping data over time
+T8	Task 169 198	annotating biological objects
+T9	Task 262 275;299 322	Understanding overlapping ontologies
+T10	Task 841 879	define similar and closest communities
+T11	Task 44 64	graph theory methods
+T12	Task 642 662	graph theory methods
+*	Equiv T11 T12
+T13	Task 105 128	life science ontologies
+T14	Task 777 797	identify communities
+T15	Task 200 228	linking relevant data pieces
+T16	Task 946 997	identify core ontologies of the closest communities
+R1	is-a-subtask-of Arg1:T13 Arg2:T8
+R2	is-a-subtask-of Arg1:T13 Arg2:T15
+R3	is-a-subtask-of Arg1:T13 Arg2:T4
+R4	is-a-subtask-of Arg1:T2 Arg2:T1
+R5	is-a-subtask-of Arg1:T9 Arg2:T1
+R6	is-achieved-by Arg1:T7 Arg2:T11
+R7	is-achieved-by Arg1:T11 Arg2:T5
+R8	is-achieved-by Arg1:T11 Arg2:T3

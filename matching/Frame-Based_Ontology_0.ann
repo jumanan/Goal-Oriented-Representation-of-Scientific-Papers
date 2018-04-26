@@ -1,0 +1,35 @@
+T1	Task 43 74	handling semantic heterogeneity
+T2	Task 642 666	Lexical linked open data
+T3	Task 557 596	the intensional meaning of their models
+T4	Task 112 124	Semantic Web
+T5	Task 898 922	knowledge reconciliation
+T6	Task 455 457	We
+T7	Task 725 727	We
+*	Equiv T6 T7
+T8	Task 671 686	frame semantics
+T9	Task 875 893	question answering
+T10	Task 348 416	find correspondences between entities having different logical types
+T11	Task 263 317	the natural language descriptions of ontology entities
+T12	Task 158 175	ontology matching
+T13	Task 805 822	ontology matching
+*	Equiv T12 T13
+R1	is-achieved-by Arg1:T1 Arg2:T12
+R2	is-a-subtask-of Arg1:T11 Arg2:T12
+R3	is-achieved-by Arg1:T1 Arg2:T6
+R4	is-achieved-by Arg1:T10 Arg2:T3
+R5	is-a-subtask-of Arg1:T8 Arg2:T6
+R6	is-a-subtask-of Arg1:T2 Arg2:T6
+R7	is-a-subtask-of Arg1:T12 Arg2:T9
+R8	is-a-subtask-of Arg1:T12 Arg2:T5
+R9	is-achieved-by Arg1:T10 Arg2:T6
+R10	is-a-subtask-of Arg1:T1 Arg2:T4
+R11	Contributes-to Arg1:T12 Arg2:T10
+A1	quality R11 -
+R12	Contributes-to Arg1:T6 Arg2:T10
+A2	quality R12 +
+R13	Contributes-to Arg1:T6 Arg2:T12
+A3	quality R13 +
+R14	Contributes-to Arg1:T6 Arg2:T9
+A4	quality R14 +
+R15	Contributes-to Arg1:T6 Arg2:T5
+A5	quality R15 +
