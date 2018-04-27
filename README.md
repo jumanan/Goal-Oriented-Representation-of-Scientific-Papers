@@ -4,8 +4,9 @@ Goal-Oriented Representation of Scientific Papers - dataset
 
 This repository contains the dataset described in: Goal-Oriented Representation of Scientific Papers.
 
-Annotation was done for three domains. Each folder contains the following file types: 
-	- *.ann files: annotation files in BRAT format 
+Annotation was done for three domains. Each folder contains the following file types:
+
+	- *.ann files: annotation files in [BRAT format](http://brat.nlplab.org/standoff.html)
 	- *.txt files: the text on which the annotations where made.
 	
 There are two types of annotations:
