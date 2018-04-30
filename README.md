@@ -17,3 +17,4 @@ There are two types of annotations:
 
 The maps of all the annotations are found under maps, and have the same name as that of the txt/ann file.
 
+It should be noted that the dataset was successfully converted to BRAT's format with the exception of CONTRIBUTE-TO relations between two QUALITIEs, and TASKs with no explicit representation in the text.
