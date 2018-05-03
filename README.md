@@ -10,17 +10,11 @@ Annotation was done for three domains. Each folder contains the following file t
 	- *.txt files: the text on which the annotations where made.
 	- *.json files: annotation files in json format (monogodb dumps).
 	
-<<<<<<< HEAD
-There are two types of annotations: \\
-	- Paper-based : summarization, and machine translation folders \\
-	- Abstract-based: matching \\
-=======
 There are two types of annotations:
 
 	- Paper-based : summarization, and machine translation folders
 	- Abstract-based: matching
 	
->>>>>>> 13e09545dc542716a06b670380ef1d8e568d25c1
 
 The maps of all the annotations are found under maps, and have the same name as that of the txt/ann file.
 
